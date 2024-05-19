@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="card.css"> -->
+    <title>Card</title>
+</head>
+<Style>
+    * {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(253, 159, 239);
+
+}
+
+.container {
+    border: 3px solid black;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardContainer {
+    width: 100px;
+    margin: 160px 5px 15px 5px;
+    margin-top: 15px;
+
+    /* height: 150px; */
+    height: 500px;
+    border: 2px solid rgb(9, 228, 236);
+    border-radius: 10px;
+    transition: 1.1s;
+
+
+
+}
+
+.background1 {
+    background: rgba(0, 0, 0, 0.5)url('tech3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.background2 {
+    background: rgba(0, 0, 0, 0.5)url('logo1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.background3 {
+    background: rgba(0, 0, 0, 0.5)url('sahil.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.background4 {
+    background: rgba(0, 0, 0, 0.5)url('logo4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.background5 {
+    background: rgba(0, 0, 0, 0.5)url('sahil2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+
+img {
+    width: 92%;
+    margin: 5%;
+    border-radius: 10px;
+    border: 2px solid white;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+}
+
+h3 {
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    font-weight: revert-layer;
+
+}
+
+.cardContainer:hover h3 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 290%;
+    font-weight: revert-layer;
+    transition: 1.0s;
+
+}
+
+p {
+    margin: 20px 20px 20px 20px;
+
+}
+
+.cardContainer:hover {
+    width: 280px;
+    border: 2px solid rgb(9, 228, 236);
+    transform: scale(1);
+    height: 550px;
+    margin-top: 15px;
+    background: rgba(0, 0, 0, 0.5)url('GM.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+
+
+}
+
+.Photo {
+    opacity: 0;
+    visibility: hidden;
+    transition: 2s;
+
+}
+
+.cardContainer:hover .Photo {
+    transition: 4s;
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.ssk {
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cardContainer:hover .ssk {
+    transition: 4s;
+    opacity: 1;
+    visibility: visible;
+
+}
+</Style>
+<body>
+    <div class="container">
+        <div class="cardContainer background1">
+            <h3>NATURE</h3>
+            <div class="Photo">
+            <img src="tech3.jpg" alt="IMG">
+            </div>
+            <div class="ssk">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem sequi error soluta corporis
+                    perspiciatis quo quidem hic quam aut asperiores. Numquam, reprehenderit? Vel eligendi laborum
+                    sapiente
+                    adipisci harum voluptas accusamus.
+                    Possimus reprehenderit laudantium tempore dolorem recusandae sed fuga quis ex veritatis harum,
+                    reiciendis, sint ullam ut distinctio.
+
+            </div>
+        </div>
+
+        <div class="cardContainer background2">
+            <h3>NATURE</h3>
+            <div class="Photo">
+                <img src="GM.jpg" alt="IMG">
+                </div>
+            <div class="ssk">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem sequi error soluta corporis
+                    perspiciatis quo quidem hic quam aut asperiores. Numquam, reprehenderit? Vel eligendi laborum
+                    sapiente
+                    adipisci harum voluptas accusamus.
+                    Possimus reprehenderit laudantium tempore dolorem recusandae sed fuga quis ex veritatis harum,
+                    reiciendis, sint ullam ut distinctio.
+
+            </div>
+        </div>
+        <div class="cardContainer background3">
+            <h3>NATURE</h3>
+            <div class="Photo">
+                <img src="sahil.jpg" alt="IMG">
+                </div>
+            <div class="ssk">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem sequi error soluta corporis
+                    perspiciatis quo quidem hic quam aut asperiores. Numquam, reprehenderit? Vel eligendi laborum
+                    sapiente
+                    adipisci harum voluptas accusamus.
+                    Possimus reprehenderit laudantium tempore dolorem recusandae sed fuga quis ex veritatis harum,
+                    reiciendis, sint ullam ut distinctio.
+
+            </div>
+        </div>
+        <div class="cardContainer background4">
+            <h3>NATURE</h3>
+            <div class="Photo">
+                <img src="logo4.jpg" alt="IMG">
+                </div>
+            <div class="ssk">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem sequi error soluta corporis
+                    perspiciatis quo quidem hic quam aut asperiores. Numquam, reprehenderit? Vel eligendi laborum
+                    sapiente
+                    adipisci harum voluptas accusamus.
+                    Possimus reprehenderit laudantium tempore dolorem recusandae sed fuga quis ex veritatis harum,
+                    reiciendis, sint ullam ut distinctio.
+
+            </div>
+        </div>
+        <div class="cardContainer background5">
+            <h3>NATURE</h3>
+            <div class="Photo">
+                <img src="sahil2.jpg" alt="IMG">
+                </div>
+            <div class="ssk">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem sequi error soluta corporis
+                    perspiciatis quo quidem hic quam aut asperiores. Numquam, reprehenderit? Vel eligendi laborum
+                    sapiente
+                    adipisci harum voluptas accusamus.
+                    Possimus reprehenderit laudantium tempore dolorem recusandae sed fuga quis ex veritatis harum,
+                    reiciendis, sint ullam ut distinctio.
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registration Form</title>
+  <style>
+    body {
+      background: rgba(0, 0, 0, 0.7)url('sahil02.jpg');
+
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: darken;
+    }
+
+    .container {
+      width: 500px;
+      height: 950px;
+      border: 5px solid red;
+      padding: 3px;
+      margin: 2px;
+      background-color: rgb(235, 228, 104);
+    }
+
+    .page {
+      width: 570px;
+      height: 1080px;
+      border: 5px solid rgb(163, 172, 238);
+      padding: 5px;
+      margin: 2px;
+      background-color: rgb(150, 239, 144);
+    }
+
+    .navbar {
+      display: flex;
+    }
+
+    .formarea {
+      padding: 20px;
+
+    }
+
+    .logo {
+      width: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 40%;
+      border: 3px solid rgb(228, 65, 5);
+      border-radius: 50%;
+      padding: 2px
+    }
+
+    .nav-list {
+      width: 20%;
+      padding: 8px;
+    }
+
+    h1 {
+      font-size: 1.7em
+    }
+
+    @media only screen and (max-width:400px) {
+      .textmsg {
+        width: 290px;
+      }
+
+      h1 {
+        font-size: 1.6em
+      }
+
+      .container {
+        width: 300px;
+
+      }
+
+      .logo img {
+        width: 60%;
+      }
+
+      .formarea {
+        padding: 3px;
+      }
+
+      .page {
+        width: 330px;
+
+      }
+    }
+  </style>
+</head>
+
+<div class="page">
+
+  <body>
+
+    <nav class="navbar ">
+      <ul class="nav-list">
+        <div class="logo"><img src="logo4.jpg" alt="logo"></div>
+      </ul>
+
+      <div class="rightNav">
+        <b>
+          <h1>Registration Form</h1>
+        </b>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <form class="formarea" action="https://formspree.io/f/xrgnkkvo" method="POST">
+        Name:<br>
+        <input type="text" name="Name" placeholder="Enter your Name" required style="
+        width: 230px;">
+        <br><br>
+        Father name:<br>
+        <input type="text" name="Father Name" placeholder="Enter Your Father Name" required style="
+        width: 230px;"><br><br>
+        Mother name:<br>
+        <input type="text" name="Mother Name" placeholder="Enter Your Mother Name" style="
+        width: 230px;">
+        <br><br>
+        E-mail:<br>
+        <input type="email" name="Email" placeholder="Enter Your E-mail" required style="
+        width: 230px;">
+        <br><br>
+        Phone Number:<br>
+        <input type="number" name="Phone" placeholder="Enter Your Phone" required style="
+        width: 230px;">
+        <br><br>
+        Aadhaar No:<br>
+        <input type="number" name="Aadhaar No" placeholder="1234 1234 1234" style="
+        width: 230px;">
+        <br><br>
+        State name:<br>
+        <select name="State">
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Chhattisgarh">Chhattisgarh</option>
+          <option value="Goa">Goa</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="Haryana">Haryana</option>
+          <option value="Himachal Pradesh">Himachal Pradesh</option>
+          <option value="Jammu and kashmir">Jammu and kashmir</option>
+          <option value="Jharkhand">Jharkhand</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Manipur">Manipur</option>
+          <option value="Meghalaya">Meghalaya</option>
+          <option value="Mizoram">Mizoram</option>
+          <option value="Nagaland">Nagaland</option>
+          <option value="Odisha">Odisha</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Sikkim">Sikkim</option>
+          <option value="Tamil Nadu">Tamil Nadu</option>
+          <option value="Telangana">Telangana</option>
+          <option value="Tripura">Tripura</option>
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="Uttrakhand">Uttrakhand</option>
+          <option value="West Bengal">West Bengal</option>
+
+
+        </select required>
+        <br><br>
+        Religion: <br>
+        <select name="Religion" id="">
+          <option value="Hinduism">Hinduism</option>
+          <option value="Islam">Islam</option>
+          <option value="Christianity">Christianity</option>
+          <option value="Buddhism">Buddhism</option>
+          <option value="Jainism">Jainism</option>
+          <option value="Sikhism">Sikhism</option>
+          <option value="Other">Other</option>
+        </select required>
+        <br>
+
+        <br>
+        Category: <br>
+        <select name="Caste" id="">
+          <option value="Genaral">Genaral Caste(GNL)</option>
+          <option value="OBC">Other Backword classes (OBC)</option>
+          <option value="SC">Scheduled Caste(SC)</option>
+          <option value="ST">Scheduled Tribes(ST)</option>
+          <option value="Other">Other</option>
+
+        </select>
+        <br>
+        <br>
+
+        Date of Birth:
+        <input type="date" name="Date of Birth" required>
+        <br>
+        <br>
+
+        Married Status: <br>
+        Single<input type="radio" name="Marital Status" value="Single">
+        Married<input type="radio" name="Marital Status" value="Married">
+        Devorced<input type="radio" name="Marital Status" value="Devorced">
+        <br><br>
+        Gender:<br>
+        Male<input type="radio" name="Gender" value="Male">
+        Female<input type="radio" name="Gender" value="Female">
+        Other<input type="radio" name="Gender" value="other"> <br><br>
+
+
+        <textarea class="textmsg" name="Massage" cols="50" rows="10" placeholder="Massage" required></textarea>
+
+        <button style="
+        display: flex;" type="submit">Send Massage</button><br>
+        <button type="reset">Reset Now</button>
+
+
+      </form>
+    </div>
+    <marquee><b>-Designed By Sahil</b></marquee>
+    <script>
+
+    </script>
+  </body>
+</div>

@@ -1,0 +1,52 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+body {
+    background: rgba(0, 0, 0, 0.7)url('sahil02.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+.row {
+    margin: 8px;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(188, 239, 223);
+}
+
+.continer {
+    /* background: rgba(0, 0, 0, 0.7)url('sahil02.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken; */
+    height: 450px;
+    width: 260px;
+    background-color: rgb(247, 253, 125);
+    /* text-align: center;
+    justify-content: center; */
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.row-display {
+    margin: 5px;
+}
+
+.text {
+    width: 213px;
+    height: 64px;
+    border: 3px solid rgb(247, 74, 74);
+}
+
+h1 {
+    margin: 0px 0px 10px 0px;
+
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Moving Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            /* background-color: aquamarine; */
+            background: rgba(0, 0, 0, 0.7)url('sahil02.jpg');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: darken;
+
+        }
+
+        .buttonContainer {
+            position: relative;
+            width: 450px;
+            height: 550px;
+            margin: 100px auto;
+            border: 2px solid black;
+            background-color: rgb(25, 134, 134);
+            text-align: center;
+
+        }
+
+        .movingButton {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        #heart-img {
+            display: block;
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+            margin-left: 100px;
+        }
+
+        .btn {
+
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: -87px;
+        }
+
+        #yes-btn {
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="buttonContainer">
+        <h2>Do You Like Me?</h2>
+        <img id="heart-img" src="GM.jpg" alt="Heart Image">
+        <button id="yes-btn" class="btn">Yes</button>
+        <button class="movingButton" id="noButton">No</button>
+
+    </div>
+
+    <script>
+
+        function moveButton() {
+            var button = document.getElementById("noButton");
+            var container = document.querySelector(".buttonContainer");
+            var containerRect = container.getBoundingClientRect();
+
+            var maxX = containerRect.width - button.offsetWidth;
+            var maxY = containerRect.height - button.offsetHeight;
+
+            var randomX = Math.floor(Math.random() * maxX);
+            var randomY = Math.floor(Math.random() * maxY);
+
+            button.style.left = randomX + "px";
+            button.style.top = randomY + "px";
+        }
+        noButton.addEventListener('mouseenter', function () {
+            moveButton();
+
+        });            
+    </script>
+</body>
+
+</html
